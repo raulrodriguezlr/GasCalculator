@@ -21,7 +21,7 @@ import com.google.android.gms.ads.MobileAds
 
 class MainActivity : ComponentActivity() {
 
-    private lateinit var buttonClick: Button
+    private lateinit var buttonClick:Button
     private lateinit var textMessage: TextView
     private lateinit var pasajeros: Spinner
     private lateinit var kmHechos: EditText

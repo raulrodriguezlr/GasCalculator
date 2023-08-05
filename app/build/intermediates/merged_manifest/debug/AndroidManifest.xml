@@ -39,10 +39,11 @@
         android:debuggable="true"
         android:extractNativeLibs="false"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/gascalculatorlogo"
+        android:icon="@drawable/gascalculatorlogo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/gascalculatorlogo"
+        android:roundIcon="@drawable/gascalculatorlogo"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.GasCalculator" >
         <activity
             android:name="com.example.gascalculator.MainActivity"
