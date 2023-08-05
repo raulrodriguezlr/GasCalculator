@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">GasCalculator</string>
+    <string name="precio_gasolina">Precio gasolina</string>
+    <string name="km_realizados">Introduce km realizados</string>
+    <string name="description">Aplicación para calcular € en gasolina por persona</string>
+    <string name="button1">Calcular</string>
+    <string name="choose_passangers">Escoge número pasajeros</string>
+    <string name="consumption_label">Litros cada 100km(L/100km)</string>
+    <string name="icon_description">Icono de la aplicación</string>
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>
