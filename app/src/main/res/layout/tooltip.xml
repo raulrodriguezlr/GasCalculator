@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/overlayLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#80000000"
+    android:clickable="true"
+    android:layout_gravity="center"
+    android:focusable="true">
+    <!-- Fondo semitransparente para oscurecer el contenido detrás -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolTipText"
+
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:padding="16dp"/>
+</FrameLayout>

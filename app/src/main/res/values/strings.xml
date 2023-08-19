@@ -6,6 +6,9 @@
     <string name="button1">Calcular</string>
     <string name="choose_passangers">Escoge número pasajeros</string>
     <string name="consumption_label">Litros cada 100km(L/100km)</string>
+    <string name="windows">Ventanas bajadas</string>
+    <string name="air">Aire acondicionado</string>
+    <string name="infoicon">info Icon</string>
     <string name="icon_description">Icono de la aplicación</string>
 
 
