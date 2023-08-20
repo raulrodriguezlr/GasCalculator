@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.gascalculator.app-mergeDebugResources-48:/values-hdpi-v4/values-hdpi-v4.xml",
+            "outputFile": "com.example.gascalculator.app-mergeDebugResources-59:/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "/Users/raulrodriguezlopez-rey/.gradle/caches/transforms-3/d831cfb82dd397f95d572197f26a0266/transformed/appcompat-1.2.0/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "source": "/Users/raulrodriguezlopez-rey/.gradle/caches/transforms-3/1a7421314055d72f42904d2b576f5fcb/transformed/appcompat-1.5.0/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

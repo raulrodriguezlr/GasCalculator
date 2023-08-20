@@ -4,6 +4,7 @@ package com.example.gascalculator
 import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.os.Bundle
+import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
@@ -56,13 +57,9 @@ class MainActivity : ComponentActivity() {
         infoAir = findViewById<ImageView>(R.id.infoAir)
 
 
-        val rootView = window.decorView.rootView as FrameLayout
-        val overlayView = layoutInflater.inflate(R.layout.tooltip, null)
-        toolTipText = overlayView.findViewById<TextView>(R.id.toolTipText)
-        windowInfo(rootView,overlayView)
 
-        //val inflater = LayoutInflater.from(this)
-        //val overlayView = inflater.inflate(R.layout.tooltip, rootView, false)
+        windowInfo()
+
 
 
 
@@ -140,34 +137,64 @@ class MainActivity : ComponentActivity() {
 
 
     }
-    private fun windowInfo(rootView:ViewGroup,overlayView:View){
-        val layoutParams = FrameLayout.LayoutParams(
-            FrameLayout.LayoutParams.WRAP_CONTENT,
-            FrameLayout.LayoutParams.WRAP_CONTENT
-        )
-        // Calcula la posición para centrar la superposición en el icono
-        //layoutParams.leftMargin = infoWindow.left + infoWindow.width / 2 - overlayView.width / 2
-        //layoutParams.topMargin = infoWindow.top + infoWindow.height / 2 - overlayView.height / 2
+    private fun windowInfo(){
 
-        overlayView.translationX= (infoWindow.left + infoWindow.width / 2 - overlayView.width / 2).toFloat()
-        overlayView.translationY= (infoWindow.top + infoWindow.height / 2 - overlayView.height / 2).toFloat()
+        var rootView = window.decorView.rootView as FrameLayout
 
+        //val overlayView = layoutInflater.inflate(R.layout.tooltip, null)
+        var overlayView: View? = null
+        var toolTipText: TextView? = null
 
-
-        rootView.addView(overlayView)
-
-
-        // Configurar el OnClickListener para el icono de información
         infoWindow.setOnClickListener {
-            toolTipText.text = "Ventana"
-            if (overlayView.parent == null) {
+            if (overlayView == null) {
+                overlayView = layoutInflater.inflate(R.layout.tooltip, rootView, false)
+                toolTipText = overlayView?.findViewById(R.id.toolTipText)
+            }
+
+            // Calcular la posición actual del botón de información
+            val infoLocation = IntArray(2)
+            infoWindow.getLocationOnScreen(infoLocation)
+            val infoLeft = infoLocation[0]
+            val infoTop = infoLocation[1]
+
+            // Calcular la posición para centrar la superposición en el botón
+            val overlayWidth = overlayView?.width ?: 0
+            val overlayHeight = overlayView?.height ?: 0
+            val overlayX = infoLeft + infoWindow.width / 2 - overlayWidth / 2
+            val overlayY = infoTop + infoWindow.height / 2 - overlayHeight / 2
+
+            // Establecer la posición y el texto de la superposición
+            overlayView?.translationX = overlayX.toFloat()
+            overlayView?.translationY = overlayY.toFloat()
+            toolTipText?.text = "Al activar esta casilla se calcula \nun aproximado de lo que consume\n ir con las ventanillas bajas.\n El valor real puede variar\n dependiendo de la velocidad\n a la que circule"
+
+            // Agregar la superposición al rootView si aún no está presente
+            if (overlayView?.parent == null) {
                 rootView.addView(overlayView)
             }
+            overlayView?.setOnClickListener {
+                rootView.removeView(overlayView)
+                rootView.removeView(overlayView)
+                overlayView = null
+                toolTipText = null
+            }
+
         }
-        // Configurar el OnClickListener para cerrar la superposición
-        overlayView.setOnClickListener {
-            rootView.removeView(overlayView)
-        }
+/*
+        rootView.setOnTouchListener { _, event ->
+            if (event.action == MotionEvent.ACTION_DOWN) {
+                if (overlayView?.parent != null) {
+                    rootView.removeView(overlayView)
+                    overlayView = null
+                    toolTipText = null
+                }
+            }
+            false // Indica que no has consumido el evento y permite que otras vistas lo manejen
+        }*/
+
+
+
+
 
 
     }

@@ -7,14 +7,17 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
+    <string name="air">Aire acondicionado</string>
     <string name="app_name">GasCalculator</string>
     <string name="button1">Calcular</string>
     <string name="choose_passangers">Escoge número pasajeros</string>
     <string name="consumption_label">Litros cada 100km(L/100km)</string>
     <string name="description">Aplicación para calcular € en gasolina por persona</string>
     <string name="icon_description">Icono de la aplicación</string>
+    <string name="infoicon">info Icon</string>
     <string name="km_realizados">Introduce km realizados</string>
     <string name="precio_gasolina">Precio gasolina</string>
+    <string name="windows">Ventanas bajadas</string>
     <style name="SpinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
         <item name="android:textSize">12sp</item> 
     </style>
