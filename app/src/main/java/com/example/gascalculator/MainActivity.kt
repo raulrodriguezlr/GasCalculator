@@ -19,6 +19,7 @@ import androidx.activity.ComponentActivity
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
+import com.raulrodriguezlr.gascalculator.R
 
 
 // Importa el color definido en color.kt
@@ -44,25 +45,23 @@ class MainActivity : ComponentActivity() {
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_main)
 
+        //Inicializacion de todos los elementos del diseño
         buttonClick = findViewById(R.id.button)
         textMessage = findViewById(R.id.textView9)
         pasajeros = findViewById(R.id.spinner)
         kmHechos = findViewById(R.id.editTextNumber)
         precioGas= findViewById(R.id.editTextNumberDecimal)
         consumo= findViewById(R.id.editTextNumberDecimal2)
-
         infoWindow = findViewById<ImageView>(R.id.infoWindow)
         infoAir = findViewById<ImageView>(R.id.infoAir)
 
 
-
+        //Aqui se ejecutan las rutinas de los Tooltips
         windowInfo()
-
-
-
-
+        airInfo()
 
         //inicializador de google ads
             MobileAds.initialize(this) {}
@@ -80,20 +79,14 @@ class MainActivity : ComponentActivity() {
         ventanas.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
                 multiplier = 1.06f
-            }
-            else{
-                multiplier = 1.0f
-
-            }
+            }else{
+                multiplier = 1.0f }
         }
         aire.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
-                multiplier = 1.1f
-            }
+                multiplier = 1.1f}
             else{
-                multiplier = 1.0f
-
-            }
+                multiplier = 1.0f }
         }
 
         buttonClick.setOnClickListener {
@@ -166,31 +159,30 @@ class MainActivity : ComponentActivity() {
             // Establecer la posición y el texto de la superposición
             overlayView?.translationX = overlayX.toFloat()
             overlayView?.translationY = overlayY.toFloat()
-            toolTipText?.text = "Al activar esta casilla se calcula \nun aproximado de lo que consume\n ir con las ventanillas bajas.\n El valor real puede variar\n dependiendo de la velocidad\n a la que circule"
+            toolTipText?.text = " Al activar esta casilla se calcula \n un aproximado de lo que consume \n ir con las ventanillas bajadas. \n El valor real puede variar \n dependiendo de la velocidad \n a la que circule. "
 
             // Agregar la superposición al rootView si aún no está presente
             if (overlayView?.parent == null) {
                 rootView.addView(overlayView)
             }
-            overlayView?.setOnClickListener {
-                rootView.removeView(overlayView)
+            overlayView?.setOnClickListener {//Para cerrar el mensaje pulsando en el texto
                 rootView.removeView(overlayView)
                 overlayView = null
                 toolTipText = null
             }
+            rootView.setOnTouchListener { _, event ->//En principio deberia funcionar si se pulsa en cualquier otro lado de la pantalla pero no es el caso
+                if (event.action == MotionEvent.ACTION_DOWN) {
+                    if (overlayView?.parent != null) {
+                        rootView.removeView(overlayView)
+                        overlayView = null
+                        toolTipText = null
+                    }
+                }
+                false // Indica que no has consumido el evento y permite que otras vistas lo manejen
+            }
 
         }
-/*
-        rootView.setOnTouchListener { _, event ->
-            if (event.action == MotionEvent.ACTION_DOWN) {
-                if (overlayView?.parent != null) {
-                    rootView.removeView(overlayView)
-                    overlayView = null
-                    toolTipText = null
-                }
-            }
-            false // Indica que no has consumido el evento y permite que otras vistas lo manejen
-        }*/
+
 
 
 
@@ -198,35 +190,57 @@ class MainActivity : ComponentActivity() {
 
 
     }
-    private fun airInfo(rootView:ViewGroup,overlayView:View){
-        val layoutParams = FrameLayout.LayoutParams(
-            FrameLayout.LayoutParams.WRAP_CONTENT,
-            FrameLayout.LayoutParams.WRAP_CONTENT,
+    private fun airInfo(){
+        var rootView = window.decorView.rootView as FrameLayout
 
-        )
+        //val overlayView = layoutInflater.inflate(R.layout.tooltip, null)
+        var overlayView: View? = null
+        var toolTipText: TextView? = null
 
-        // Calcula la posición para centrar la superposición en el icono
-        layoutParams.leftMargin = infoAir.left + infoAir.width / 2 - overlayView.width / 2
-        layoutParams.topMargin = infoAir.top + infoAir.height / 2 - overlayView.height / 2
-        overlayView.layoutParams = layoutParams
-        rootView.addView(overlayView)
-
-
-        // Configurar el OnClickListener para el icono de información
         infoAir.setOnClickListener {
-            toolTipText.text = "Aire"
+            if (overlayView == null) {
+                overlayView = layoutInflater.inflate(R.layout.tooltip, rootView, false)
+                toolTipText = overlayView?.findViewById(R.id.toolTipText)
+            }
 
-            if (overlayView.parent == null) {
+            // Calcular la posición actual del botón de información
+            val infoLocation = IntArray(2)
+            infoAir.getLocationOnScreen(infoLocation)
+            val infoLeft = infoLocation[0]
+            val infoTop = infoLocation[1]
+
+            // Calcular la posición para centrar la superposición en el botón
+            val overlayWidth = overlayView?.width ?: 0
+            val overlayHeight = overlayView?.height ?: 0
+            val overlayX = infoLeft + infoAir.width / 2 - overlayWidth / 2
+            val overlayY = infoTop + infoAir.height / 2 - overlayHeight / 2
+
+            // Establecer la posición y el texto de la superposición
+            overlayView?.translationX = overlayX.toFloat()
+            overlayView?.translationY = overlayY.toFloat()
+            toolTipText?.text = " Al activar esta casilla se calcula \n un aproximado de lo que consume \n cicular con el aire acondicionado \n encendido. \n El valor real puede variar \n dependiendo de la velocidad \n a la que circule, metereología \n y la temperatura. "
+
+            // Agregar la superposición al rootView si aún no está presente
+            if (overlayView?.parent == null) {
                 rootView.addView(overlayView)
             }
+            overlayView?.setOnClickListener {
+                rootView.removeView(overlayView)
+                overlayView = null
+                toolTipText = null
+            }
+            rootView.setOnTouchListener { _, event ->
+                if (event.action == MotionEvent.ACTION_DOWN) {
+                    if (overlayView?.parent != null) {
+                        rootView.removeView(overlayView)
+                        overlayView = null
+                        toolTipText = null
+                    }
+                }
+                false // Indica que no has consumido el evento y permite que otras vistas lo manejen
+            }
+
         }
-
-        // Configurar el OnClickListener para cerrar la superposición
-        overlayView.setOnClickListener {
-            rootView.removeView(overlayView)
-        }
-
-
     }
 
 

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.gascalculator.app-mergeDebugResources-59:/values-eu/values-eu.xml",
+            "outputFile": "gascalculator.app-mergeDebugResources-59:/values-eu/values-eu.xml",
             "map": [
                 {
                     "source": "/Users/raulrodriguezlopez-rey/.gradle/caches/transforms-3/cb384ced1dedc895946ae6c672aed0d7/transformed/material3-1.0.0/res/values-eu/values-eu.xml",

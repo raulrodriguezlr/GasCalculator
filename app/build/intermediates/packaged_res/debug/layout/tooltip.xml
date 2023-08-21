@@ -4,16 +4,26 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="#80000000"
+    android:layout_margin="10px"
+
     android:clickable="true"
     android:focusable="true">
     <!-- Fondo semitransparente para oscurecer el contenido detrás -->
 
     <TextView
         android:id="@+id/toolTipText"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:padding="2dp"
+
+        android:clickable="false"
+        android:contentDescription="A quick explanation about the checknbox next to it"
+        android:lineSpacingExtra="2sp"
         android:text="Hola"
         android:textColor="#FFFFFF"
-        android:clickable="false" />
+        android:textSize="12sp"
+        />
 
 </FrameLayout>

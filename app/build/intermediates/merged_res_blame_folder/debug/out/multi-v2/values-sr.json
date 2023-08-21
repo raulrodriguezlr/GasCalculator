@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.gascalculator.app-mergeDebugResources-59:/values-sr/values-sr.xml",
+            "outputFile": "gascalculator.app-mergeDebugResources-59:/values-sr/values-sr.xml",
             "map": [
                 {
                     "source": "/Users/raulrodriguezlopez-rey/.gradle/caches/transforms-3/40ceb32fa40db536005ae5aca69f1236/transformed/core-1.8.0/res/values-sr/values-sr.xml",

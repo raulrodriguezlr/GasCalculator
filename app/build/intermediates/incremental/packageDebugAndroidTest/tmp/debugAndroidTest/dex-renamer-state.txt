@@ -1,7 +1,7 @@
-#Tue Aug 01 20:54:12 CEST 2023
-base.0=/Users/raulrodriguezlopez-rey/AndroidStudioProjects/GasCalculator/app/build/intermediates/dex/debugAndroidTest/mergeExtDexDebugAndroidTest/classes.dex
-base.1=/Users/raulrodriguezlopez-rey/AndroidStudioProjects/GasCalculator/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/0/classes.dex
-base.2=/Users/raulrodriguezlopez-rey/AndroidStudioProjects/GasCalculator/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/15/classes.dex
+#Sun Aug 20 18:08:53 CEST 2023
+base.0=/Users/raulrodriguezlopez-rey/git/GasCalculator/app/build/intermediates/dex/debugAndroidTest/mergeExtDexDebugAndroidTest/classes.dex
+base.1=/Users/raulrodriguezlopez-rey/git/GasCalculator/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/0/classes.dex
+base.2=/Users/raulrodriguezlopez-rey/git/GasCalculator/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/15/classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=15/classes.dex

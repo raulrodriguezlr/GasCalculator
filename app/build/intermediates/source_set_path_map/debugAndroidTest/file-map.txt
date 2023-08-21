@@ -26,7 +26,7 @@ com.example.gascalculator.test.app-ui-test-1.3.0-24 /Users/raulrodriguezlopez-re
 com.example.gascalculator.test.app-activity-1.5.1-25 /Users/raulrodriguezlopez-rey/.gradle/caches/transforms-3/e18758b1ab7f1978dd06843bc267c55f/transformed/activity-1.5.1/res
 com.example.gascalculator.test.app-lifecycle-viewmodel-ktx-2.5.1-26 /Users/raulrodriguezlopez-rey/.gradle/caches/transforms-3/e7041c0910b85a0d40111b2fd73517a3/transformed/lifecycle-viewmodel-ktx-2.5.1/res
 com.example.gascalculator.test.app-startup-runtime-1.1.1-27 /Users/raulrodriguezlopez-rey/.gradle/caches/transforms-3/ff23019a6da6ec48f0ad332075dd6e2d/transformed/startup-runtime-1.1.1/res
-com.example.gascalculator.test.app-androidTest-28 /Users/raulrodriguezlopez-rey/AndroidStudioProjects/GasCalculator/app/build/generated/res/resValues/androidTest/debug
-com.example.gascalculator.test.app-mergeDebugAndroidTestResources-29 /Users/raulrodriguezlopez-rey/AndroidStudioProjects/GasCalculator/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
-com.example.gascalculator.test.app-mergeDebugAndroidTestResources-30 /Users/raulrodriguezlopez-rey/AndroidStudioProjects/GasCalculator/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
-com.example.gascalculator.test.app-merged_res-31 /Users/raulrodriguezlopez-rey/AndroidStudioProjects/GasCalculator/app/build/intermediates/merged_res/debugAndroidTest
+com.example.gascalculator.test.app-androidTest-28 /Users/raulrodriguezlopez-rey/git/GasCalculator/app/build/generated/res/resValues/androidTest/debug
+com.example.gascalculator.test.app-mergeDebugAndroidTestResources-29 /Users/raulrodriguezlopez-rey/git/GasCalculator/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.example.gascalculator.test.app-mergeDebugAndroidTestResources-30 /Users/raulrodriguezlopez-rey/git/GasCalculator/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.example.gascalculator.test.app-merged_res-31 /Users/raulrodriguezlopez-rey/git/GasCalculator/app/build/intermediates/merged_res/debugAndroidTest

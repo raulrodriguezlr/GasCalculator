@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.gascalculator.app-mergeDebugResources-59:/values-en-rAU/values-en-rAU.xml",
+            "outputFile": "gascalculator.app-mergeDebugResources-59:/values-en-rAU/values-en-rAU.xml",
             "map": [
                 {
                     "source": "/Users/raulrodriguezlopez-rey/.gradle/caches/transforms-3/1a7421314055d72f42904d2b576f5fcb/transformed/appcompat-1.5.0/res/values-en-rAU/values-en-rAU.xml",

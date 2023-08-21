@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.gascalculator.app-mergeDebugResources-59:/values-w320dp-land-v13/values-w320dp-land-v13.xml",
+            "outputFile": "gascalculator.app-mergeDebugResources-59:/values-w320dp-land-v13/values-w320dp-land-v13.xml",
             "map": [
                 {
                     "source": "/Users/raulrodriguezlopez-rey/.gradle/caches/transforms-3/c092d2c2f8a1dac90e5b35120dbadf44/transformed/material-1.9.0/res/values-w320dp-land-v13/values-w320dp-land-v13.xml",

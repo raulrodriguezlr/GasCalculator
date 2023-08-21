@@ -1,94 +1,90 @@
 [
     {
-        "merged": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-merged_res-61:/drawable_gascalculatorlogo.png.flat",
-        "source": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-main-63:/drawable/gascalculatorlogo.png"
+        "merged": "gascalculator.app-merged_res-61:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "gascalculator.app-main-63:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-merged_res-61:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-main-63:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "gascalculator.app-merged_res-61:/mipmap-hdpi_gascalculatorlogo.png.flat",
+        "source": "gascalculator.app-main-63:/mipmap-hdpi/gascalculatorlogo.png"
     },
     {
-        "merged": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-merged_res-61:/xml_data_extraction_rules.xml.flat",
-        "source": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-main-63:/xml/data_extraction_rules.xml"
+        "merged": "gascalculator.app-merged_res-61:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "gascalculator.app-main-63:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-merged_res-61:/layout_activity_main.xml.flat",
-        "source": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-main-63:/layout/activity_main.xml"
+        "merged": "gascalculator.app-merged_res-61:/xml_backup_rules.xml.flat",
+        "source": "gascalculator.app-main-63:/xml/backup_rules.xml"
     },
     {
-        "merged": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-merged_res-61:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-main-63:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "gascalculator.app-merged_res-61:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "gascalculator.app-main-63:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-merged_res-61:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-main-63:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "gascalculator.app-merged_res-61:/layout_activity_main.xml.flat",
+        "source": "gascalculator.app-main-63:/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-merged_res-61:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-main-63:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "gascalculator.app-merged_res-61:/drawable_ic_launcher_background.xml.flat",
+        "source": "gascalculator.app-main-63:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-merged_res-61:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-main-63:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "gascalculator.app-merged_res-61:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "gascalculator.app-main-63:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-merged_res-61:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-main-63:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "gascalculator.app-merged_res-61:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "gascalculator.app-main-63:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-merged_res-61:/layout_tooltip.xml.flat",
-        "source": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-main-63:/layout/tooltip.xml"
+        "merged": "gascalculator.app-merged_res-61:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "gascalculator.app-main-63:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-merged_res-61:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-main-63:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "gascalculator.app-merged_res-61:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "gascalculator.app-main-63:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-merged_res-61:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-main-63:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "gascalculator.app-merged_res-61:/drawable_ic_info.png.flat",
+        "source": "gascalculator.app-main-63:/drawable/ic_info.png"
     },
     {
-        "merged": "com.example.gascalculator.app-merged_res-61:/layout_tooltip.xml.flat",
-        "source": "com.example.gascalculator.app-main-63:/layout/tooltip.xml"
+        "merged": "gascalculator.app-merged_res-61:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "gascalculator.app-main-63:/drawable-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-merged_res-61:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-main-63:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "gascalculator.app-merged_res-61:/xml_data_extraction_rules.xml.flat",
+        "source": "gascalculator.app-main-63:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-merged_res-61:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-main-63:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "gascalculator.app-merged_res-61:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "gascalculator.app-main-63:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-merged_res-61:/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-main-63:/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "gascalculator.app-merged_res-61:/drawable_gascalculatorlogo.png.flat",
+        "source": "gascalculator.app-main-63:/drawable/gascalculatorlogo.png"
     },
     {
-        "merged": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-merged_res-61:/xml_activity_main_scene.xml.flat",
-        "source": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-main-63:/xml/activity_main_scene.xml"
+        "merged": "gascalculator.app-merged_res-61:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "gascalculator.app-main-63:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-merged_res-61:/xml_backup_rules.xml.flat",
-        "source": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-main-63:/xml/backup_rules.xml"
+        "merged": "gascalculator.app-merged_res-61:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "gascalculator.app-main-63:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-merged_res-61:/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-main-63:/drawable/ic_launcher_background.xml"
+        "merged": "gascalculator.app-merged_res-61:/xml_activity_main_scene.xml.flat",
+        "source": "gascalculator.app-main-63:/xml/activity_main_scene.xml"
     },
     {
-        "merged": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-merged_res-61:/drawable_ic_info.png.flat",
-        "source": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-main-63:/drawable/ic_info.png"
+        "merged": "gascalculator.app-merged_res-61:/layout_tooltip.xml.flat",
+        "source": "gascalculator.app-main-63:/layout/tooltip.xml"
     },
     {
-        "merged": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-merged_res-61:/mipmap-hdpi_gascalculatorlogo.png.flat",
-        "source": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-main-63:/mipmap-hdpi/gascalculatorlogo.png"
+        "merged": "gascalculator.app-merged_res-61:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "gascalculator.app-main-63:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-merged_res-61:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-main-63:/mipmap-xxhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-merged_res-61:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/raulrodriguezlopez-rey/.gradle/daemon/8.0/com.example.gascalculator.app-main-63:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "gascalculator.app-merged_res-61:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "gascalculator.app-main-63:/mipmap-hdpi/ic_launcher.webp"
     }
 ]

@@ -43,7 +43,6 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/gascalculatorlogo"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.GasCalculator" >
         <activity
             android:name="com.example.gascalculator.MainActivity"
@@ -59,7 +58,7 @@
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-7082123988966000~1638698610" />
+            android:value="ca-app-pub-5990737004037272~3849377640" />
 
         <activity
             android:name="androidx.compose.ui.tooling.PreviewActivity"
